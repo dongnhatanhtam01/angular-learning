@@ -28,4 +28,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Nội dung tìm hiểu
 
+1) tạo component bằng tay  
+> từ đó biết được view là @Component
+> từ đó biết được controller là class
+> sau cùng nhớ export và import đử :)
 
+2) tạo component thông qua angular cli  
+
+cú pháp: ng g c <tên compoent>
+
+3) cơ chế data binding, interpolation và bi-directional binding
