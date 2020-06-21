@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+```javascript
+message: string  = 'Xin Chao, ContactListComponent! ';
+printable: boolean = false;
+contacts: Array<any> = [
+        {id: 1, name: 'tamdna', job: 'Web Dev', avatar: {url: '../../../assets/avatar/avatar2.png'}},
+        {id: 2, name: 'Mac AT', job: 'Producer, Director'},
+        {id: 3, name: 'At Director', job: 'Writter', avatar: {url: '../../../assets/avatar/avatar2.png'}},
+    ];
+```
