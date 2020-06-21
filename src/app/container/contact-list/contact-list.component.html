@@ -1,0 +1,38 @@
+<hr>
+<!-- Câu lệnh trong hàm click - statement - liên quan đén event -->
+<button (click)="printable = !(printable)">Toogle message</button>
+<!-- printable trong *ngIf - expression - gọi biểu thức  -->
+<!-- expression được tính toán trong đó. ví dụ 1 - 1 = 0 tương đương với false thì nó ẩn thẻ đi  -->
+<p>printable: {{printable}}</p>
+<h2 *ngIf="printable">{{message}}</h2>
+
+<div *ngIf="contacts">
+    <div *ngFor="let contact of contacts">
+        <h3>{{contact.name}}</h3>
+        <div>
+            <img [ngStyle]="{'width':'150px'}" *ngIf="contact.avatar?.url" [src]="contact.avatar?.url" [alt]="contact.name">
+        </div>
+    </div>
+</div>
+
+<!-- tab head  -->
+<div>
+    <button (click)="changeTab(1)">Tab 1</button>
+    <button (click)="changeTab(2)">Tab 2</button>
+    <button (click)="changeTab(3)">Tab 3</button>
+</div>
+<!-- tab panel  -->
+<div [ngSwitch]="tabIndex">
+    <ng-template [ngSwitchCase]="1">
+        <div>Tab content 1</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, est!</p>
+    </ng-template>
+    <ng-template [ngSwitchCase]="2">
+        <div>Tab content 2</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus eum soluta fugiat ipsa itaque aperiam aliquid placeat dolor omnis.</p>
+    </ng-template>
+    <ng-template [ngSwitchCase]="3">
+        <div>Tab content 3</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, rerum quos placeat doloremque voluptatibus molestias nemo atque corrupti ea, eligendi quisquam porro saepe error vitae beatae itaque, hic provident voluptate.</p>
+    </ng-template>
+</div>

@@ -10,6 +10,6 @@ export class ContactImageDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.avatar.url = "https://via.placeholder.com/150.png/09f/fff%20C/O%20https://placeholder.com/"
+    this.avatar.url = "https://via.placeholder.com/150.png/09f/fff%20C/O%20https://placeholder.com/?bg=e8117f"
   }
 }
