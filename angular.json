@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dog-sign"
+    }
+  },
+  "defaultProject": "dog-sign",
+  "cli": {
+    "analytics": "182d3d5d-2dca-4f7e-9cc2-0e792d500151"
+  }
 }

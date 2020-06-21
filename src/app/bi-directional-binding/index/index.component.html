@@ -1,0 +1,15 @@
+<p>index works!</p>
+<hr>
+<div>Không dùng ngModel -directive</div>
+<div>
+    <input type="text" (keyup.enter)="updateMessages()" [value]="message" (input)="message = $event.target.value" />
+    <button (click)="updateMessages()">Button...</button>
+</div>
+<hr>
+<div>ngModel attribute - directive</div>
+<div>(ngModelOnchange)</div>
+<div>
+    <input type="text" (keyup.enter)="updateMessages()" [(ngModel)]="message">
+    <button (click)="updateMessages()">Button...</button>
+
+</div>
