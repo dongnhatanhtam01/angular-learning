@@ -30,8 +30,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1) tạo component bằng tay  
 > từ đó biết được view là @Component
-> từ đó biết được controller là class
-> sau cùng nhớ export và import đử :)
+ từ đó biết được controller là class
+ sau cùng nhớ export và import  :ghost:
 
 2) tạo component thông qua angular cli  
 
