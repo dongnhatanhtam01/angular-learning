@@ -8,9 +8,9 @@
 
 <div *ngIf="contacts">
     <div *ngFor="let contact of contacts">
-        <h3>{{contact.name}}</h3>
+        <h3 class="tamdna-username">{{contact.name}}</h3>
         <div>
-            <img [ngStyle]="{'width':'150px'}" *ngIf="contact.avatar?.url" [src]="contact.avatar?.url" [alt]="contact.name">
+            <img class="tamdna-avatar" [ngStyle]="{'width':'150px'}" *ngIf="contact.avatar?.url" [src]="contact.avatar?.url" [alt]="contact.name">
         </div>
     </div>
 </div>

@@ -1,8 +1,10 @@
-import { Component } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 //view
 @Component({
     selector: 'dnat-contact-list',
-    templateUrl: './contact-list.component.html' 
+    templateUrl: './contact-list.component.html' ,
+    styleUrls: ['./contact-list.component.scss'],
+    encapsulation: ViewEncapsulation.Emulated, //khong thuc ihieb dibg giu nya
 })
 //controller
 export class ContactListComponent {
