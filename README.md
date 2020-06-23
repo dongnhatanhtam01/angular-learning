@@ -26,12 +26,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-```javascript
-message: string  = 'Xin Chao, ContactListComponent! ';
-printable: boolean = false;
-contacts: Array<any> = [
-        {id: 1, name: 'tamdna', job: 'Web Dev', avatar: {url: '../../../assets/avatar/avatar2.png'}},
-        {id: 2, name: 'Mac AT', job: 'Producer, Director'},
-        {id: 3, name: 'At Director', job: 'Writter', avatar: {url: '../../../assets/avatar/avatar2.png'}},
-    ];
-```
+## ENCAPSULATION CSS
+
+import ViewEncapsulation trong Component để dùng được tính năng đóng gói của style trong angular gọi là encapsulation
+> ViewEncapsulation.None: nghĩa là nhận style của Global  
+ViewEncapsulation.Emulated: Nghĩa là nhận style của global và chính nó
+ViewEncapsulation.Native: nghĩa là không chơi với ai  
+ViewEncapsulation không nói chuyện với style của component cấp cha
+
+Ngoài ra thì còn khái niệm shadow Dom gây khố khăn trong việc chỉnh sửa style của thành phần trang web
+
+muốn chỉnh style cho component 
+> **Dùng :host** display block  
+**Dung styles**: [``] nhận vào 1 mảng các class css  
+**Dùng styleUrls** : [ ] nhận vào mảng đường dẫn đến style css
