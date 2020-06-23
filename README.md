@@ -8,7 +8,7 @@
 import ViewEncapsulation trong Component để dùng được tính năng đóng gói của style trong angular gọi là encapsulation
 > ViewEncapsulation.None: nghĩa là nhận style của Global  
 ViewEncapsulation.Emulated: Nghĩa là nhận style của global và chính nó
-ViewEncapsulation.ShadowDom: nghĩa là không chơi với ai  thay cho __ViewEncapsulation.Native__
+ViewEncapsulation.ShadowDom: nghĩa là không chơi với ai  thay cho __ViewEncapsulation.Native__  
 ViewEncapsulation không nói chuyện với style của component cấp cha
 
 Ngoài ra thì còn khái niệm shadow Dom gây khố khăn trong việc chỉnh sửa style của thành phần trang web
